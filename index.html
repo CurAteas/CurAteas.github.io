@@ -33,4 +33,112 @@
         }
 
         section {
-            padding: 20px
+            padding: 20px;
+        }
+
+        h2 {
+            color: #4a3628;
+        }
+
+        .tea {
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #ede1d2;
+            border-radius: 8px;
+        }
+
+        .newsletter, .events {
+            background-color: #e4d3b5;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        .newsletter input[type="email"],
+        .newsletter input[type="submit"] {
+            padding: 10px;
+            margin-top: 10px;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .event {
+            background-color: #fffaf3;
+            margin: 10px 0;
+            padding: 15px;
+            border-left: 5px solid #7a5c3e;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #7a5c3e;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>CurAteas</h1>
+    <p>Your Tea, Curated Perfectly</p>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#products">Teas</a>
+    <a href="#newsletter">Newsletter</a>
+    <a href="#events">Events</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+    <h2>About CurAteas</h2>
+    <p>CurAteas is your source for locally crafted, wellness-inspired tea blends. Our mission is to bring curated tea experiences to the Capital Region through ethically sourced ingredients and vibrant community connections.</p>
+</section>
+
+<section id="products">
+    <h2>Our Teas</h2>
+    <div class="tea">
+        <h3>Peach Jasmine Green Tea</h3>
+        <p>A light, floral blend with freeze-dried peaches, jasmine green tea, and a hint of sweetness. Preserved naturally for freshness.</p>
+    </div>
+    <div class="tea">
+        <h3>Lavender Earl Grey</h3>
+        <p>Classic black tea with bergamot and soothing lavender. A relaxing, aromatic brew perfect for mindful sipping.</p>
+    </div>
+    <div class="tea">
+        <h3>Rose White Tea</h3>
+        <p>Delicate white tea with rose petals. Soft, fragrant, and perfect for a quiet moment of beauty.</p>
+    </div>
+</section>
+
+<section id="newsletter" class="newsletter">
+    <h2>Join Our Tea Circle</h2>
+    <p>Sign up for our newsletter to receive updates, special offers, and invites to pop-up events.</p>
+    <form>
+        <input type="email" name="email" placeholder="Your email address" required>
+        <input type="submit" value="Subscribe">
+    </form>
+</section>
+
+<section id="events" class="events">
+    <h2>Upcoming Events & Tastings</h2>
+    <div class="event">
+        <strong>June 8, 2025:</strong> Pop-Up Tasting at Albany Farmers Market – 10am–2pm
+    </div>
+    <div class="event">
+        <strong>June 22, 2025:</strong> Summer Solstice Tea Meditation – Location TBA
+    </div>
+    <!-- Add more events here -->
+</section>
+
+<footer>
+    <p>Follow us: @mycurateas | Email: mycurateas@gmail.com</p>
+    <p>&copy; 2025 CurAteas LLC</p>
+</footer>
+
+</body>
+</html>
