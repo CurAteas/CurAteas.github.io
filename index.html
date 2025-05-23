@@ -1,144 +1,94 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>CurAteas - Your Tea, Curated Perfectly</title>
-    <style>
-        body {
-            font-family: 'Georgia', serif;
-            background-color: #f4efe7;
-            color: #2e1f18;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background-color: #7a5c3e;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-
-        nav {
-            background-color: #a3876a;
-            padding: 10px;
-            text-align: center;
-        }
-
-        nav a {
-            margin: 0 15px;
-            color: #fffbe9;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        section {
-            padding: 20px;
-        }
-
-        h2 {
-            color: #4a3628;
-        }
-
-        .tea {
-            margin-bottom: 20px;
-            padding: 10px;
-            background-color: #ede1d2;
-            border-radius: 8px;
-        }
-
-        .newsletter, .events {
-            background-color: #e4d3b5;
-            border-radius: 10px;
-            padding: 20px;
-            margin-top: 30px;
-        }
-
-        .newsletter input[type="email"],
-        .newsletter input[type="submit"] {
-            padding: 10px;
-            margin-top: 10px;
-            width: 100%;
-            max-width: 400px;
-        }
-
-        .event {
-            background-color: #fffaf3;
-            margin: 10px 0;
-            padding: 15px;
-            border-left: 5px solid #7a5c3e;
-            border-radius: 5px;
-        }
-
-        footer {
-            background-color: #7a5c3e;
-            color: white;
-            text-align: center;
-            padding: 15px;
-            margin-top: 40px;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CurAteas</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background-color: #f7f2eb;
+      color: #2d1b0f;
+      line-height: 1.6;
+    }
+    header, footer {
+      background-color: #5a3e2b;
+      color: #fff;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      font-style: italic;
+      font-size: 1.2rem;
+    }
+    nav {
+      background-color: #e6d9cc;
+      padding: 0.75rem;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 1rem;
+      color: #5a3e2b;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      padding: 2rem 1rem;
+      max-width: 800px;
+      margin: auto;
+    }
+    h2 {
+      color: #5a3e2b;
+    }
+    .form-section input, .form-section button {
+      padding: 0.5rem;
+      margin-top: 0.5rem;
+      font-size: 1rem;
+      width: 100%;
+      max-width: 400px;
+      display: block;
+    }
+    .calendar-placeholder {
+      border: 2px dashed #a1866f;
+      padding: 1rem;
+      text-align: center;
+      margin-top: 2rem;
+      color: #5a3e2b;
+    }
+  </style>
 </head>
-<body>
-
-<header>
+<body>  <header>
     <h1>CurAteas</h1>
     <p>Your Tea, Curated Perfectly</p>
-</header>
-
-<nav>
+  </header>  <nav>
     <a href="#about">About</a>
-    <a href="#products">Teas</a>
+    <a href="#teas">Teas</a>
+    <a href="#mission">Mission</a>
     <a href="#newsletter">Newsletter</a>
     <a href="#events">Events</a>
     <a href="#contact">Contact</a>
-</nav>
-
-<section id="about">
-    <h2>About CurAteas</h2>
-    <p>CurAteas is your source for locally crafted, wellness-inspired tea blends. Our mission is to bring curated tea experiences to the Capital Region through ethically sourced ingredients and vibrant community connections.</p>
-</section>
-
-<section id="products">
-    <h2>Our Teas</h2>
-    <div class="tea">
-        <h3>Peach Jasmine Green Tea</h3>
-        <p>A light, floral blend with freeze-dried peaches, jasmine green tea, and a hint of sweetness. Preserved naturally for freshness.</p>
-    </div>
-    <div class="tea">
-        <h3>Lavender Earl Grey</h3>
-        <p>Classic black tea with bergamot and soothing lavender. A relaxing, aromatic brew perfect for mindful sipping.</p>
-    </div>
-    <div class="tea">
-        <h3>Rose White Tea</h3>
-        <p>Delicate white tea with rose petals. Soft, fragrant, and perfect for a quiet moment of beauty.</p>
-    </div>
-</section>
-
-<section id="newsletter" class="newsletter">
-    <h2>Join Our Tea Circle</h2>
-    <p>Sign up for our newsletter to receive updates, special offers, and invites to pop-up events.</p>
-    <form>
-        <input type="email" name="email" placeholder="Your email address" required>
-        <input type="submit" value="Subscribe">
-    </form>
-</section>
-
-<section id="events" class="events">
-    <h2>Upcoming Events & Tastings</h2>
-    <div class="event">
-        <strong>June 8, 2025:</strong> Pop-Up Tasting at Albany Farmers Market – 10am–2pm
-    </div>
-    <div class="event">
-        <strong>June 22, 2025:</strong> Summer Solstice Tea Meditation – Location TBA
-    </div>
-    <!-- Add more events here -->
-</section>
-
-<footer>
-    <p>Follow us: @mycurateas | Email: mycurateas@gmail.com</p>
-    <p>&copy; 2025 CurAteas LLC</p>
-</footer>
-
-</body>
-</html>
+  </nav>  <section id="about">
+    <h2>Welcome to CurAteas</h2>
+    <p>We believe tea is more than a beverage — it is a bridge to wellness, a ritual of presence, and a practice of community care. Our teas are intentionally curated and brewed with ingredients that nourish, calm, energize, and uplift.</p>
+    <p>Founded by Nathaniel "Aniel" Galloway, CurAteas is an Albany-based mobile tea company delivering small-batch bottled teas and loose-leaf blends directly to our community. With every sip, we celebrate healing, heritage, and heart-forward entrepreneurship.</p>
+  </section>  <section id="teas">
+    <h2>Our Signature Blends</h2>
+    <ul>
+      <li><strong>Peach Jasmine Green Tea:</strong> Fruity and floral with a bright finish.</li>
+      <li><strong>Lavender Earl Grey:</strong> A calm twist on a bold classic.</li>
+      <li><strong>Rose White Tea:</strong> Delicate, fragrant, and beautifully light.</li>
+      <li><strong>TransFloré:</strong> A floral-forward transition support blend made with herbs that honor the unique journey of transgender women.</li>
+      <li><strong>Velvet River:</strong> A dreamy, nervous system-soothing infusion of lemon balm, passionflower, skullcap, vervain, chamomile, tulsi, rose and more.</li>
+      <li><strong>Whisker Breath:</strong> A cat-safe blend designed to ease respiratory distress and promote feline calm.</li>
+    </ul>
+  </section>  <section id="mission">
+    <h2>Our Mission</h2>
+    <p>We are committed to sourcing from local and women-owned suppliers whenever possible. Our small batches are crafted with attention to quality, wellness benefits, and vibrant flavor. We aim to offer more than just tea — we offer space for healing, gathering, and empowerment through intentional sipping and storytelling.</p>
+  </section>  <section id="newsletter" class="form-section">
